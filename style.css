@@ -1,0 +1,76 @@
+* {
+    margin:0 ;
+    padding: 0;
+    font-family: 'Helvetica Neue Bold', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    width: 1260px;
+    margin: auto;
+    background-image: url('./images/city-skyline-summer-time-urban-view-background_107791-9101.webp');
+    height: 600px;
+}
+
+.rightCar {
+position: absolute;
+bottom: 0;
+right: 5%;
+ display: inline-block;
+ animation-name: moveLeft;
+ animation-duration: 10s;
+ animation-delay: 1s;
+ animation-timing-function: linear;
+ animation-direction: initial;
+ animation-iteration-count: infinite;
+}
+
+.rightCar img {
+    width: 200px;
+    
+}
+
+@keyframes moveLeft {
+    from {
+     bottom: 0;
+     right: 0;
+    }
+    to {
+    bottom: 0;
+    right: 90%;
+    }
+}
+
+
+
+.leftCar {
+position: absolute;
+bottom: 0;
+left: 5%;
+ display: inline-block;
+ animation-name: moveRight;
+ animation-duration: 10s;
+ animation-delay: 1s;
+ animation-timing-function: linear;
+ animation-direction: initial;
+ animation-iteration-count: infinite;
+}
+
+
+
+
+.leftCar img {
+    width: 200px;
+}
+
+@keyframes moveRight {
+    from {
+        bottom: 0;
+        left: 0;
+    }
+    to{
+        bottom: 0;
+        left: 90%;
+    }
+}
